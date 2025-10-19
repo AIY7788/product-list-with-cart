@@ -98,7 +98,5 @@ In future updates, I’d like to:
 
 ## Acknowledgments
 
-## Acknowledgments
-
 This project was completed independently as a personal learning challenge.  
 Special thanks to [Frontend Mentor](https://www.frontendmentor.io/) for providing the design and concept.
