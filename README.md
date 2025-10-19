@@ -33,13 +33,12 @@ Users should be able to:
 
 ### Screenshot
 
-[](assets\images\screenshot.jpg)
-
+![](assets/images/screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [ AIY7788-Solution](https://github.com/AIY7788/product-list-with-cart)
+- Live Site URL: [AIY7788-live-site](https://aiy7788.github.io/product-list-with-cart/)
 
 ## My process
 

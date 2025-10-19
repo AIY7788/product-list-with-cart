@@ -2,7 +2,7 @@ import { addToCart, cart, clearCart } from './cart.js';
 import { formatCurrency } from './utils/money-format.js';
 
 async function loadProducts() {
-  const res = await fetch('../data.json');
+  const res = await fetch('./data.json');
   const datas = await res.json();
 
   return datas;
