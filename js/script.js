@@ -30,21 +30,21 @@ products.forEach(product => {
         </picture>
 
         <div class="add-to-cart-btn-selected" id="add-to-cart-btn-selected-${safeName}">
-          <button class="decrement-btn" id="decrement-btn-${safeName}" data-product-name="${safeName}">
+          <button type="button" class="decrement-btn" id="decrement-btn-${safeName}" data-product-name="${safeName}" aria-label="decrement quantity">
             <img src="assets/images/icon-decrement-quantity.svg" alt="">
           </button>
 
           <p id="quantity-${safeName}">0</p>
           
-          <button class="increment-btn" id="increment-btn-${safeName}" data-product-name="${safeName}">
+          <button type="button" class="increment-btn" id="increment-btn-${safeName}" data-product-name="${safeName}" aria-label="increment quantity">
             <img src="assets/images/icon-increment-quantity.svg" alt="">
           </button> 
         </div>
 
-        <button class="add-to-cart-btn"
+        <button type="button" class="add-to-cart-btn"
         id="add-to-cart-btn-${safeName}" data-product-name="${safeName}" 
         data-product-price="${product.price}">
-          <img class="cart-icon" src="assets/images/icon-add-to-cart.svg">
+          <img class="cart-icon" src="assets/images/icon-add-to-cart.svg" alt="">
           Add to Cart
         </button>
       </div>
@@ -71,7 +71,7 @@ function renderOrderSummary() {
   if (cart.length === 0) {
     containOrderListEl.innerHTML = `
       <div class="empty-cart">
-        <img src="assets/images/illustration-empty-cart.svg">
+        <img src="assets/images/illustration-empty-cart.svg" alt="">
         <p>Your added items will appear here</p>
       </div>
     `;
@@ -104,7 +104,7 @@ function renderOrderSummary() {
             </div>
           </div>
 
-          <button class="remove-btn" data-product-name="${safeName}">
+          <button type="button" class="remove-btn" data-product-name="${safeName}" aria-label="remove form cart">
             <img src="assets/images/icon-remove-item.svg" alt="">
           </button>
 
@@ -127,7 +127,7 @@ function renderOrderSummary() {
         <p>This is a <span>carbon neutral</span> delivery</p>
       </div>
 
-      <button class="confirm-btn" id="confirmed-btn">Confirm Order</button>
+      <button type="submit" class="confirm-btn" id="confirmed-btn">Confirm Order</button>
     `;
 
   }
