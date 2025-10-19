@@ -1,0 +1,282 @@
+.contain-order-list {
+  margin-top: 1.5rem;
+  max-height: 14.625rem;
+  overflow-y: auto;
+}
+
+.contain-order-list::-webkit-scrollbar {
+  display: none;
+}
+
+.order {
+  border-bottom: 1.5px solid var(--rose-100);
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contain-info {
+  font-weight: 500;
+}
+
+.order-info {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.order-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.quantity {
+  margin-right: 1rem;
+  color: var(--color-red);
+}
+
+.price {
+  margin-right: 0.5rem;
+  color: var(--rose-300);
+}
+
+.total {
+  color: var(--rose-500);
+}
+
+.remove-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 8px;
+  border: 1.5px solid var(--rose-300);
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  border-color: var(--rose-500);
+}
+
+/* Order Total */
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.title-total {
+  font-size: 1rem;
+  color: var(--rose-500);
+}
+
+.price-total {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--rose-900);
+}
+
+/* carbon neutral delivery */
+.carbon-neutral-delivery {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--rose-50);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.carbon-neutral-delivery img {
+  margin-right: 0.5rem;
+}
+
+.carbon-neutral-delivery p {
+  color: var(--rose-500);
+}
+
+.carbon-neutral-delivery span {
+  color: var(--rose-900);
+  font-weight: 600;
+}
+
+/* Confirm button */
+
+.confirm-btn {
+  padding: 1rem 0;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--color-red);
+  color: var(--rose-100);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.confirm-btn:hover {
+  opacity: 0.8;
+}
+
+/* Order Confirmed */
+
+.cover {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.confirmed {
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background-color: white;
+  padding: 1.5rem 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.confirmed img {
+  height: 40px;
+}
+
+.confirmed h1 {
+  margin-bottom: 4px;
+  width: 30vw;
+}
+
+.confirmed p {
+  font-size: 0.8rem;
+
+}
+
+.confirmed .contain-order-confirmed {
+  margin-top: 1.6rem;
+  background-color: var(--rose-50);
+  padding: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.confirmed .start-new-btn {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--color-red);
+  color: var(--rose-100);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.start-new-btn:hover {
+  opacity: 0.8;
+}
+
+.contain-order-confirmed .order-confirmed-list {
+  height: 12.625rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.contain-order-confirmed .order-confirmed-list::-webkit-scrollbar {
+  display: none;
+}
+
+.contain-order-confirmed .order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--rose-100) ;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contain-order-confirmed .order-confirmed-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.order-confirmed-list .order-confirmed {
+  display: flex;
+  align-items: center;
+  line-height: 1.6;
+}
+
+.order-confirmed-list .total {
+  color: var(--rose-900);
+}
+
+.order-confirmed-list .order-confirmed img {
+  margin-right: 0.6rem;
+  border-radius: 4px;
+}
+
+.order-confirmed .order-confirmed-info div {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.order-confirmed-info div .price {
+  font-weight: 500;
+}
+
+.order-confirmed-info div .at-sign-symbol {
+  font-size: 0.6rem;
+}
+
+/* responsive */
+
+@media (max-width: 23rem) {
+  .carbon-neutral-delivery {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (min-width: 25.5rem) {
+
+  .confirmed {
+    min-width: 35vw;
+    position: unset;
+    border-radius: 10px;
+  }
+
+}
+
+@media (min-width: 60rem) {
+
+  .confirmed h1 {
+    width: 100%;
+  }
+
+}

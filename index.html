@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/order-summary.css"> 
+</head>
+<body>
+
+  <main>
+    
+    <div class="container">
+      <h1>Desserts</h1>
+      <!-- product-card -->
+      <div class="product-list">
+        <!-- This is where the products will be added by JavaScript. -->
+      </div>
+
+    </div>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+      <h3 class="title">Your Cart (<span id="quantity-total">0</span>)</h3>
+    
+      <div class="contain-order-list" id="contain-order-list">
+        <!-- This is where the orders will be added by JavaScript. -->
+
+      </div>
+
+      <div id="order-summary-botom-section">
+       <!-- It will be added by JavaScript. -->
+
+      </div>
+    
+    </div> 
+
+  </main>
+
+  <div class="cover" id="cover">
+
+    <div class="confirmed">
+
+      <img src="assets/images/icon-order-confirmed.svg" alt="">
+
+      <h1>Order Confirmed</h1>
+      <p>We hope you enjoy your food!</p>
+
+      <div class="contain-order-confirmed">
+
+        <div class="order-confirmed-list" id="order-confirmed-list">
+          <!-- It will be added by JavaScript. -->
+          
+        </div>
+
+        <div class="order-confirmed-total">
+          <p class="title-total">Order Total</p>
+          <div class="price-total" id="price-total"></div>
+        </div>
+      </div>
+
+      <button class="start-new-btn" id="start-new-btn">Start New Order</button>
+    </div> 
+
+  </div>
+  
+  <script type="module" src="js/script.js"></script>
+  <script type="module" src="js/cart.js"></script>
+</body>
+</html>
