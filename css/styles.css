@@ -124,7 +124,7 @@ h1 {
 }
 
 .add-to-cart-btn-selected button:hover img {
-  filter: invert(75%) sepia(55%) saturate(3000%) hue-rotate(357deg) brightness(95%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(30%) sepia(89%) saturate(1415%) hue-rotate(351deg) brightness(83%) contrast(101%);
 }
 
 .add-to-cart-btn img {
