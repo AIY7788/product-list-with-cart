@@ -59,6 +59,7 @@
 
 .remove-btn:hover {
   border-color: var(--rose-500);
+  filter: brightness(0) saturate(100%) invert(35%) sepia(4%) saturate(3560%) hue-rotate(325deg) brightness(106%) contrast(70%);
 }
 
 /* Order Total */
