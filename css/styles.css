@@ -110,8 +110,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 16px;
-  width: 16px;
+  height: 1rem;
+  padding: 2px;
   border-radius: 8px;
   border: 1px solid var(--rose-100);
   background-color: transparent;
@@ -121,7 +121,6 @@ h1 {
 
 .add-to-cart-btn-selected button:hover {
   background-color: var(--rose-100);
-  border: none;
 }
 
 .add-to-cart-btn-selected button:hover img {
